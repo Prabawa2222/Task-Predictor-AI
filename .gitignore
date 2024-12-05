@@ -1,0 +1,5 @@
+/server/env
+/server/task/__pycache__
+/server/task_management/__pycache__
+/server/task_management/__init__.__pycache__
+/server/db.sqlite3
