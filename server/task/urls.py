@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import predict_priority_view
+from . import views
 
 urlpatterns = [
-  path("predict-priority/", predict_priority_view, name="predict-priority")
+    path('tasks/', views.predict_priority_view, name='predict_priority'),
+    path('tasks/<int:task_id>/', views.task_detail_view, name='task_detail'),
 ]
